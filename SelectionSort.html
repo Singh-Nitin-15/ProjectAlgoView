@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Visualizer</title>
+    <link rel="stylesheet" href="SelectionSort.css">
+    <script src="SelectionSort.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Selection Sort Visualizer</h1>
+        <label>Enter Array (comma-separated): </label>
+        <input type="text" id="arrayInput" placeholder="e.g. 5,3,8,1,2">
+        <br><br>
+        <button id="sortBtn" onclick="visualizeSelectionSort()">Start Sorting</button>
+        <div class="array-container" id="arrayContainer"></div>
+        
+        <div class="legend">
+            <span style="background-color: #ff7b72;"></span> Current Element
+            <span style="background-color: #58a6ff;"></span> Compared Element
+            <span style="background-color: #3fb950;"></span> Sorted Elements
+        </div>
+    </div>
+</body>
+</html>

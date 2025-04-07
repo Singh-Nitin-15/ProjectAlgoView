@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort Visualizer</title>
+    <link rel="stylesheet" href="QuickSort.css">
+   
+</head>
+<body>
+<div class="container">
+    <h1>Quick Sort Visualizer</h1>
+    <div class="legend">
+        <span style="background-color: #ff7b72;"></span> Pivot
+        <span style="background-color: #3fb950;"></span> Sorted
+    </div>
+    <label>Enter Array (comma-separated): </label>
+    <input type="text" id="arrayInput" placeholder="e.g. 5,3,8,1,2">
+    <br><br>
+    <button onclick="startQuickSort()">Start Sorting</button>
+    <div class="array-container" id="arrayContainer"></div>
+</div>
+<script src="QuickSort.js"></script>
+</body>
+</html>

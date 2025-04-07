@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #0a0a0a;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+/* Background effect */
+.splash-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, #111 30%, #0a0a0a 100%);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  opacity: 0.05;
+  z-index: 0;
+}
+
+/* Center content */
+.splash-content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  color: #00ffee;
+  text-shadow: 0 0 10px #00ffee, 0 0 20px #00c2ff;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #00ffee;
+  width: 8px;
+  height: 40px;
+  vertical-align: bottom;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.subtitle {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 35px;
+  background: linear-gradient(90deg, #00ffee, #00c2ff);
+  color: #0a0a0a;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 0 15px #00ffee, 0 0 30px #00ffee;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.start-btn:hover {
+  background: linear-gradient(90deg, #00c2ff, #00ffee);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee;
+}
+
