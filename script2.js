@@ -1,4 +1,5 @@
-const toggle = document.getElementById('modeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('light');
-    });
+const toggle = document.getElementById('modeToggle').querySelector('input');
+
+toggle.addEventListener('change', () => {
+  document.body.classList.toggle('light', toggle.checked);
+});
